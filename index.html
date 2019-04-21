@@ -3,28 +3,126 @@
 	<head>
 		<title>Hank Quinlan, Horrible Cop</title>
 		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" type="text/css" href="./css/main.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<script src="main.js" type="text/javascript"></script>
 	</head>
-	<body>
+	<body class="background">
+		<!-- Header-->
 		<nav>
     		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
+        		<li><a href="index.html">Home</a></li>
+	        	<li><a href="#about">About</a></li>
+        		<li><a href="#projects">Experience</a></li>
+        		<li><a href="#contact">Contact</a></li>
     		</ul>
 		</nav>
+
+		<!-- Body -->
 		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
+			<img src="kevin_hoang.jpg" class="icons-selfpicture"></img>
+
+    		<div id="about" class="body-intro">
+        		<h1>Kevin Hoang | 4th year Computer Science | UManitoba</h1>
+				<p>I'm a Computer Scientist. Officially, my job is to assist on
+					projects that companies are working on, provide feedback and insight on
+					ideas with the projects, and collaborate with other people to provide a
+					finished product. This is a fancy way of saying I sit in front of a 
+					computer 8 hours of week, mashing buttons until things work. 
+				</p>
+			</div>
+
+			<div id="projects" class="body-projects">
+				<h1>Coding Experience</h1>
+				<div class="body-projects-container white-background">
+					<section class="project cow-tris-adventures fade">
+						<div class="numbertext">1 / 8</div>
+						<article class="project-description">
+							<h1>Cow-Tris Adventures</h1>
+							<p>Collaborated with a team of 5 high-school students to develop a Tetris-like game involving cows and explosions. Used C#, C++, and Adobe Photoshop.</p>
+						</article>
+					</section>
+					<section class="project conveyor-belt-VR fade">
+						<div class="numbertext">2 / 8</div>						
+						<article class="project-description">
+							<h1>Conveyor Belt Research</h1>
+							<p>A research experiment for Undergraduate Research to determine whether different input methods affect performance and immersion in Virtual Reality. Written in C#.</p>
+						</article>
+					</section>
+					<section class="project carnival-game-VR fade">
+						<div class="numbertext">3 / 8</div>						
+						<article class="project-description">
+							<h1>Throw GameVR</h1>
+							<p>A carnival game to test out video game and virtual reality development in Unity. Throw balls to the moving target to keep yourself in the game! Written in C#.</p>
+						</article>
+					</section>
+					<section class="project agriculture-agrifoods fade">
+						<div class="numbertext">4 / 8</div>
+						<article class="project-description">
+							<h1>Agriculture & Agri-Foods Canada</h1>
+							<p>Created an asynchronous timesheet application with various functionalities, such as autosave and printing. Used Groovy, Oracle, HTML, CSS, JavaScript, JQuery, DataTables, and Mustache.js</p>
+						</article>
+					</section>
+					<section class="project wawanesa-insurance fade">
+						<div class="numbertext">5 / 8</div>
+						<article class="project-description">
+							<h1>Wawanesa Insurance</h1>
+							<p>Assisted with various components of a claims-viewing application, such as bug fixes, notifications on outages via HTTP Requests, document retrievals, etc. Written with AngularJS, JavaScript, Gosu, and Java.</p>
+						</article>
+					</section>
+					<section class="project shape-interpreter fade">
+						<div class="numbertext">6 / 8</div>
+						<article class="project-description">
+							<h1>Shape Interpreter</h1>
+							<p>A simplified application that renders a 3D modal of the shape that the user draws in Virtual Reality. Created for COMP 4020 - Human-Computer Interaction 2. Written in C#.</p>
+						</article>
+						</section>
+					<section class="project notify-VR fade">
+						<div class="numbertext">7 / 8</div>
+						<article class="project-description">
+							<h1>NotifyVR</h1>
+							<p>A class project to conduct pilot studies on an effective way to view notifications, using Unity, from a phone with an HTC Vive. Written in C#.</p>
+						</article>
+					</section>
+					<section class="project personal-website fade">
+						<div class="numbertext">8 / 8</div>
+						<article class="project-description">
+							<h1>Personal Website</h1>
+							<p>A website dedicated to myself to both test my abilities in website development and design. Written in HTML, CSS, and JavaScript.</p>
+						</article>
+					</section>
+
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<div style="text-align:center">
+					<span class="dot active" onclick="currentSlide(1)"></span> 
+					<span class="dot" onclick="currentSlide(2)"></span> 
+					<span class="dot" onclick="currentSlide(3)"></span> 
+					<span class="dot" onclick="currentSlide(4)"></span> 
+					<span class="dot" onclick="currentSlide(5)"></span>
+					<span class="dot" onclick="currentSlide(6)"></span> 
+					<span class="dot" onclick="currentSlide(7)"></span>
+					<span class="dot" onclick="currentSlide(8)"></span> 
+				</div>
+			</div>
+			
+		</div>
+
+		<!-- Footer -->
 		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
+			<div id="contact" class="icons-social">
+				<ul>
+					<li><a href="mailto:kevinhoang9797@gmail.com"><i class="fas fa-envelope"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/kevin-hoang-cs-uofm/"><i class="fab fa-linkedin"></i></a></li>
+					<li><a href="https://github.com/Syndrical"><i class="fab fa-github"></i></a></li>
+					<li><a href="http://hci.cs.umanitoba.ca/people/bio/kevin-hoang"><i class="far fa-newspaper"></i></a></li>
+					<li><a href="https://www.instagram.com/kevinhoang__/"><i class="fab fa-instagram"></i></a></li>
+				</ul>
+			</div>
+			<p>Copyright © 2019. Developed by Kevin Hoang.</p>
 		</footer>
 	</body>
 </html>
