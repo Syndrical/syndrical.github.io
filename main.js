@@ -1,18 +1,18 @@
 var slideIndex = 1;
 showSlides(slideIndex);
     
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+function plusSlides(n, type, dot) {
+    showSlides(slideIndex += n, type, dot);
 }
     
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+function currentSlide(n, type, dot) {
+    showSlides(slideIndex = n, type, dot);
 }
     
-function showSlides(n) {
+function showSlides(n, type, dot) {
     var i;
-    var slides = document.getElementsByClassName("project");
-    var dots = document.getElementsByClassName("dot");
+    var slides = document.getElementsByClassName(type);
+    var dots = document.getElementsByClassName(dot);
     if (n > slides.length) {slideIndex = 1}    
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
