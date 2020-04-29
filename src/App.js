@@ -19,13 +19,15 @@ function Copyright() {
 
 export default function App() {
   return (
-    <Container maxWidth="sm">
-      <Box my={4}>
-        <Typography variant="h4" component="h1" gutterBottom>
-          Server Rendering v4-beta example
-        </Typography>
-        <Copyright />
-      </Box>
-    </Container>
+    <div className="app">
+      <Container maxWidth="sm">
+        <Box my={4}>
+          <Typography variant="h4" component="h1" gutterBottom>
+            Server Rendering v4-beta example
+          </Typography>
+          <Copyright />
+        </Box>
+      </Container>
+    </div>
   );
 }
