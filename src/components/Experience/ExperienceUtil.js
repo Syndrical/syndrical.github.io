@@ -95,7 +95,7 @@ export const projectExperience = [
     title: 'Shape Interpreter',
     place: 'Group Project',
     location: 'Winnipeg, MB',
-    duration: 'March 2019',
+    duration: 'February 2019',
     text: `A simplified application that renders a 3D modal of the shape that the user draws in Virtual Reality. Created for COMP 4020 - Human-Computer Interaction 2. Written in C#. Link here.`,
     note: 'Class Project',
     image: 'ShapeInterpreter.jpg',
@@ -202,12 +202,14 @@ export const DisplayExperience = (job) => {
             </Grid>
             <Grid item>
               <Typography variant="overline">
-                {job.location}
+                <Box>{job.location}</Box>
               </Typography>
             </Grid>
           </Grid>
           <Grid item>
-            <Typography variant="button">{job.note}</Typography>
+            <Typography variant="button">
+              <Box>{job.note}</Box>
+            </Typography>
           </Grid>
         </Grid>
       </Grid>
