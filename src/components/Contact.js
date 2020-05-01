@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {
   Container,
-  Link,
   IconButton,
   Typography,
   Box,
@@ -49,7 +48,7 @@ export default function Education() {
           <Box>Contact Me</Box>
         </Typography>
         <Typography align="center" gutterBottom variant="caption">
-          <Box>Wanna connect? See more information? Contact me. </Box>
+          <Box>Wanna connect? See more information? Let's talk. </Box>
         </Typography>
         <Box justifyContent="center" display="flex">
           <IconButton href="mailto:kevinhoang9797@gmail.com">

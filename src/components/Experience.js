@@ -5,9 +5,9 @@ import {
   AppBar,
   Tabs,
   Tab,
-  Typography,
   Box,
   Divider,
+  CardMedia,
 } from '@material-ui/core';
 import WorkExperience from './Experience/WorkExperience';
 import ProjectExperience from './Experience/ProjectExperience';
@@ -16,6 +16,9 @@ import OtherExperience from './Experience/OtherExperience';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+  },
+  image: {
+    backgroundAttachment: 'fixed',
   },
 }));
 
@@ -30,11 +33,7 @@ function TabPanel(props) {
       aria-labelledby={`full-width-tab-${index}`}
       {...other}
     >
-      {value === index && (
-        <Box p={3}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
+      {value === index && <Box p={3}>{children}</Box>}
     </div>
   );
 }
@@ -68,24 +67,44 @@ export default function About() {
           onChange={handleChange}
           indicatorColor="primary"
           textColor="primary"
-          aria-label="full width tabs example"
+          aria-label="experience"
           centered
         >
-          <Tab label="Work Experience" {...a11yProps(0)} />
-          <Tab label="Projects" {...a11yProps(1)} />
-          <Tab label="Others" {...a11yProps(2)} />
+          <Tab key="1" label="Work Experience" {...a11yProps(0)} />
+          <Tab key="2" label="Projects" {...a11yProps(1)} />
+          <Tab key="3" label="Others" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
-
-      <TabPanel value={value} index={0} dir={theme.direction}>
-        <WorkExperience />
-      </TabPanel>
-      <TabPanel value={value} index={1} dir={theme.direction}>
-        <ProjectExperience />
-      </TabPanel>
-      <TabPanel value={value} index={2} dir={theme.direction}>
-        <OtherExperience />
-      </TabPanel>
+      <CardMedia
+        className={classes.image}
+        title="Winnipeg"
+        image="nature.jpg"
+      >
+        <TabPanel
+          key="4"
+          value={value}
+          index={0}
+          dir={theme.direction}
+        >
+          <WorkExperience />
+        </TabPanel>
+        <TabPanel
+          key="5"
+          value={value}
+          index={1}
+          dir={theme.direction}
+        >
+          <ProjectExperience />
+        </TabPanel>
+        <TabPanel
+          key="6"
+          value={value}
+          index={2}
+          dir={theme.direction}
+        >
+          <OtherExperience />
+        </TabPanel>
+      </CardMedia>
       <Divider />
     </div>
   );

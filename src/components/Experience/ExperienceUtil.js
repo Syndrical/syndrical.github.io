@@ -11,7 +11,7 @@ const useStyles = makeStyles(() => ({
     padding: 20,
   },
   image: {
-    width: 400,
+    maxWidth: 400,
   },
   img: {
     border: '1px solid grey',
@@ -26,6 +26,7 @@ const useStyles = makeStyles(() => ({
 
 export const workExperience = [
   {
+    id: '1',
     title: 'Teaching Assistant',
     place: 'University of Manitoba - Computer Science Department',
     location: 'Winnipeg, MB',
@@ -35,6 +36,7 @@ export const workExperience = [
     image: 'classroom.jpg',
   },
   {
+    id: '2',
     title: 'Software Developer',
     place: 'Varian Medical Systems',
     location: 'Winnipeg, MB',
@@ -44,6 +46,7 @@ export const workExperience = [
     image: 'varian.jpg',
   },
   {
+    id: '3',
     title: 'Application Developer',
     place: 'Wawanesa Insurance',
     location: 'Winnipeg, MB',
@@ -53,6 +56,7 @@ export const workExperience = [
     image: 'wawanesa.jpg',
   },
   {
+    id: '4',
     title: 'Programmer / Analyst',
     place: 'Agriculture and Agri-Food Canada',
     location: 'Winnipeg, MB',
@@ -62,6 +66,7 @@ export const workExperience = [
     image: 'agricultureagrifoods.jpg',
   },
   {
+    id: '5',
     title: 'Undergraduate Researcher',
     place: 'University of Manitoba - HCI Labs',
     location: 'Winnipeg, MB',
@@ -74,6 +79,7 @@ export const workExperience = [
 
 export const projectExperience = [
   {
+    id: '6',
     title: 'Personal Website',
     place: 'Personal Project',
     location: 'Winnipeg, MB',
@@ -83,6 +89,7 @@ export const projectExperience = [
     image: 'website.jpg',
   },
   {
+    id: '7',
     title: 'NotifyVR',
     place: 'Group Project',
     location: 'Winnipeg, MB',
@@ -92,6 +99,7 @@ export const projectExperience = [
     image: 'NotifyVR.jpg',
   },
   {
+    id: '8',
     title: 'Shape Interpreter',
     place: 'Group Project',
     location: 'Winnipeg, MB',
@@ -101,6 +109,7 @@ export const projectExperience = [
     image: 'ShapeInterpreter.jpg',
   },
   {
+    id: '9',
     title: 'Throw-GameVR',
     place: 'Personal Project',
     location: 'Winnipeg, MB',
@@ -110,6 +119,7 @@ export const projectExperience = [
     image: 'ThrowGame-Demo.gif',
   },
   {
+    id: '10',
     title: 'Cow-Tris Adventures',
     place: 'Group Project',
     location: 'Winnipeg, MB',
@@ -122,6 +132,7 @@ export const projectExperience = [
 
 export const otherExperience = [
   {
+    id: '11',
     title: 'Webmaster',
     place:
       'University of Manitoba - Biomedical Engineering Design Team',
@@ -132,6 +143,7 @@ export const otherExperience = [
     image: 'IMG_9399_EDIT.jpg',
   },
   {
+    id: '12',
     title: 'Aesthetics Team',
     place: 'University of Manitoba - Concrete Canoe',
     location: 'Winnipeg, MB',
@@ -141,6 +153,7 @@ export const otherExperience = [
     image: 'UMCCC_Logo.png',
   },
   {
+    id: '13',
     title: 'Hype Crew',
     place: 'Ignite Cycle & Strength',
     location: 'Winnipeg, MB',
@@ -150,6 +163,7 @@ export const otherExperience = [
     image: 'ignite.jpg',
   },
   {
+    id: '14',
     title: 'Hype Crew',
     place: 'WPG Cycle',
     location: 'Winnipeg, MB',
@@ -159,6 +173,7 @@ export const otherExperience = [
     image: 'wpgcycle.jpg',
   },
   {
+    id: '15',
     title: 'Frontline Leader',
     place: 'University of Manitoba',
     location: 'Winnipeg, MB',
@@ -173,7 +188,7 @@ export const DisplayExperience = (job) => {
   const classes = useStyles();
 
   return (
-    <Container className={classes.container}>
+    <Container key={job.id} className={classes.container}>
       <Grid container spacing={2}>
         <Grid item>
           <Container className={classes.image}>
@@ -207,9 +222,7 @@ export const DisplayExperience = (job) => {
             </Grid>
           </Grid>
           <Grid item>
-            <Typography variant="button">
-              <Box>{job.note}</Box>
-            </Typography>
+            <Typography variant="button">{job.note}</Typography>
           </Grid>
         </Grid>
       </Grid>
