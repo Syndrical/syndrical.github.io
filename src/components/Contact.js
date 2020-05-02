@@ -5,6 +5,7 @@ import {
   IconButton,
   Typography,
   Box,
+  Avatar,
 } from '@material-ui/core';
 import MailIcon from '@material-ui/icons/Mail';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -12,7 +13,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import InstagramIcon from '@material-ui/icons/Instagram';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
@@ -20,21 +21,9 @@ const useStyles = makeStyles(() => ({
     maxWidth: 1000,
     padding: 50,
   },
-  image: {
-    width: 400,
-  },
-  img: {
-    border: '1px solid grey',
-    margin: 'auto',
-    display: 'block',
-    maxWidth: '100%',
-    maxHeight: '100%',
-    borderRadius: 20,
-    objectFit: 'cover',
-  },
-  icon: {
-    width: 60,
-    height: 60,
+  avatar: {
+    width: theme.spacing(15),
+    height: theme.spacing(15),
   },
 }));
 
@@ -51,6 +40,13 @@ export default function Education() {
       }
     >
       <Container className={classes.container}>
+        <Box justifyContent="center" display="flex">
+          <Avatar
+            className={classes.avatar}
+            alt="Kevin Hoang"
+            src="DSC_0064.jpg"
+          />
+        </Box>
         <Typography align="center" color="textPrimary" variant="h4">
           <Box>Contact Me</Box>
         </Typography>

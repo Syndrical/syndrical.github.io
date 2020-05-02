@@ -69,9 +69,19 @@ export default function About() {
           aria-label="experience"
           centered
         >
-          <Tab key="1" label="Work Experience" {...a11yProps(0)} />
-          <Tab key="2" label="Projects" {...a11yProps(1)} />
-          <Tab key="3" label="Others" {...a11yProps(2)} />
+          <Tab
+            wrapped
+            key="1"
+            label="Work Experience"
+            {...a11yProps(0)}
+          />
+          <Tab wrapped key="2" label="Projects" {...a11yProps(1)} />
+          <Tab
+            wrapped
+            key="3"
+            label="Extracurricular"
+            {...a11yProps(2)}
+          />
         </Tabs>
       </AppBar>
       <CardMedia

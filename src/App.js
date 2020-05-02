@@ -48,10 +48,10 @@ export default function App() {
   return (
     <div className="app">
       <MuiThemeProvider theme={themeConfig}>
-        <AppBar position="static" color="default">
+        <AppBar position="fixed" color="default">
           <Box justifyContent="center" display="flex">
             <FormControlLabel
-              label="Toggle"
+              label="Toggle Light/Dark Mode"
               control={<Switch onClick={toggleDarkMode} />}
             />
           </Box>
