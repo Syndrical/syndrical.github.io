@@ -10,7 +10,6 @@ import {
 import MailIcon from '@material-ui/icons/Mail';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import InstagramIcon from '@material-ui/icons/Instagram';
 
 const useStyles = makeStyles((theme) => ({
@@ -30,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Education() {
   const classes = useStyles();
   const theme = useTheme();
-  console.log(theme);
+
   return (
     <div
       style={
@@ -68,10 +67,6 @@ export default function Education() {
 
           <IconButton href="https://github.com/Syndrical">
             <GitHubIcon fontSize="large" />
-          </IconButton>
-
-          <IconButton href="http://hci.cs.umanitoba.ca/people/bio/kevin-hoang">
-            <LibraryBooksIcon fontSize="large" />
           </IconButton>
 
           <IconButton href="https://www.instagram.com/kevinhoang__/">

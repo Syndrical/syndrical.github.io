@@ -9,6 +9,9 @@ import {
   Divider,
   CardMedia,
 } from '@material-ui/core';
+import WorkIcon from '@material-ui/icons/Work';
+import StorageIcon from '@material-ui/icons/Storage';
+import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import WorkExperience from './Experience/WorkExperience';
 import ProjectExperience from './Experience/ProjectExperience';
 import OtherExperience from './Experience/OtherExperience';
@@ -72,14 +75,22 @@ export default function About() {
           <Tab
             wrapped
             key="1"
-            label="Work Experience"
+            label="Work"
+            icon={<WorkIcon />}
             {...a11yProps(0)}
           />
-          <Tab wrapped key="2" label="Projects" {...a11yProps(1)} />
+          <Tab
+            wrapped
+            key="2"
+            label="Projects"
+            icon={<StorageIcon />}
+            {...a11yProps(1)}
+          />
           <Tab
             wrapped
             key="3"
-            label="Extracurricular"
+            label="Others"
+            icon={<LibraryBooksIcon />}
             {...a11yProps(2)}
           />
         </Tabs>

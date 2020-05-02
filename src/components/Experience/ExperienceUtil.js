@@ -1,6 +1,13 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Container, Typography, Box } from '@material-ui/core';
+import {
+  Grid,
+  Container,
+  Typography,
+  Box,
+  Button,
+} from '@material-ui/core';
+import ForwardIcon from '@material-ui/icons/Forward';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -31,7 +38,7 @@ export const workExperience = [
     place: 'University of Manitoba - Computer Science Department',
     location: 'Winnipeg, MB',
     duration: 'September 2019 - CURRENT',
-    text: `Marked and provided feedback for labs to Introductory to Computer Science classes. Explained concepts to groups of students and helped facilitate communication and peer programming.`,
+    text: `Marked and provided feedback for labs to Introductory to Computer Science classes. Explained concepts to groups of students and helped facilitate communication / peer programming.`,
     note: '',
     image: 'classroom.jpg',
   },
@@ -41,7 +48,7 @@ export const workExperience = [
     place: 'Varian Medical Systems',
     location: 'Winnipeg, MB',
     duration: 'May 2019 - August 2019',
-    text: `Worked in teams of 7 to create a minimal marketable product cloud native application to replace an existing, outdated application using Angular. Explored with Micronaut, a testing framework, and provided tests to a simple HTTP request program, providing an example to the company on how to use Micronaut to promote effective and reliable code release practices.`,
+    text: `Worked in teams of 7 to create a minimal marketable product cloud native application to replace an existing, outdated application. Explored Micronaut and providing an example to the company on how to use Micronaut, by making tests to a simple HTTP request program, to promote effective and reliable code release practices. Collaborated with project managers and designers for improved user experience. Used TypeScript and Angular`,
     note: 'Co-op Work Term 3',
     image: 'varian.jpg',
   },
@@ -51,7 +58,7 @@ export const workExperience = [
     place: 'Wawanesa Insurance',
     location: 'Winnipeg, MB',
     duration: 'September 2018 - December 2018',
-    text: `Detected, investigated, and resolved bugs in discrete parts of the applications to further understand the structure of the code and seeing how the front-end and back-end is all connected. Constructed effective test cases using Karma and Jasmine to ensure the quality and the usability of the program achieved business standards. Designing and creating additions to the UI with JavaScript, and AngularJS that encapsulates services used across development teams for future use.`,
+    text: `Detected, investigated, and resolved bugs in discrete parts of different applications throughout the company. Constructed effective test cases using Karma and Jasmine to ensure the quality and usability of the application to achieved business standards. Created endpoints to utilize HTTP Requests to add in notifications about system maintenance / outtages to applications.  Collaborated with UX Designer to design and create UI additions with JavaScript, and AngularJS.`,
     note: 'Co-op Work Term 2',
     image: 'wawanesa.jpg',
   },
@@ -61,7 +68,7 @@ export const workExperience = [
     place: 'Agriculture and Agri-Food Canada',
     location: 'Winnipeg, MB',
     duration: 'January 2018 - August 2018',
-    text: `Enhanced the usability and maintainability of various applications within the department to promote consistency of code structure and reusability. Composed and suggested various UI concepts and design changes to magnify user satisfaction and experience within the applications using Javascript, HTML, CSS, and JQuery. Reviewed code and assessed the impact of submitted changes to ensure reliability of the application.`,
+    text: `Enhanced the usability and maintainability of various applications within the department through refactoring to promote consistency of code structure and reusability. Composed and suggested various UI concepts and design changes to magnify user satisfaction and experience within the applications using Javascript, HTML, CSS, and JQuery. Reviewed code and assessed the impact of submitted changes to ensure reliability of the application.`,
     note: 'Co-op Work Term 1',
     image: 'agricultureagrifoods.jpg',
   },
@@ -74,6 +81,7 @@ export const workExperience = [
     text: `Created a sorting task environment in a virtual reality setting, using Unity, to test if different input mechanisms impacted both a user’s performance and immersion. Designed, coded, and tested the environment and interfaces in C# while conducting the study.`,
     note: '',
     image: 'uofm.jpg',
+    link: 'http://hci.cs.umanitoba.ca/people/bio/kevin-hoang',
   },
 ];
 
@@ -84,9 +92,10 @@ export const projectExperience = [
     place: 'Personal Project',
     location: 'Winnipeg, MB',
     duration: 'April 2019 - CURRENT',
-    text: `A website dedicated to myself to both test my abilities in website development and design. Written in HTML, CSS, and JavaScript. Link here.`,
+    text: `A website dedicated to myself to both test my abilities in website development and design. Used React and Material-UI, along with HTML, CSS, and JavaScript.`,
     note: '',
     image: 'website.jpg',
+    link: 'https://syndrical.github.io/',
   },
   {
     id: '7',
@@ -94,9 +103,10 @@ export const projectExperience = [
     place: 'Group Project',
     location: 'Winnipeg, MB',
     duration: 'March 2019',
-    text: `A class project to conduct pilot studies on an effective way to view notifications, using Unity, from a phone with an HTC Vive. Created for COMP 4020 - Human-Computer Interaction 2. Written in C#. Link here.`,
+    text: `A class project to conduct pilot studies on an effective way to view notifications, using Unity, from a phone with an HTC Vive. Created for COMP 4020 - Human-Computer Interaction 2. Written in C#.`,
     note: 'Class Project',
     image: 'NotifyVR.jpg',
+    link: 'https://github.com/tizzir/VRNotifications',
   },
   {
     id: '8',
@@ -104,9 +114,10 @@ export const projectExperience = [
     place: 'Group Project',
     location: 'Winnipeg, MB',
     duration: 'February 2019',
-    text: `A simplified application that renders a 3D modal of the shape that the user draws in Virtual Reality. Created for COMP 4020 - Human-Computer Interaction 2. Written in C#. Link here.`,
+    text: `A simplified application that renders a 3D modal of the shape that the user draws in Virtual Reality. Created for COMP 4020 - Human-Computer Interaction 2. Written in C#.`,
     note: 'Class Project',
     image: 'ShapeInterpreter.jpg',
+    link: 'https://github.com/Syndrical/ShapeInterpreter',
   },
   {
     id: '9',
@@ -114,9 +125,10 @@ export const projectExperience = [
     place: 'Personal Project',
     location: 'Winnipeg, MB',
     duration: 'December 2017',
-    text: `A carnival game to test out video game and virtual reality development in Unity. Throw balls to the moving target to keep yourself in the game! Written in C#. Link here.`,
+    text: `A carnival game to test out video game and virtual reality development in Unity. Throw balls to the moving target to keep yourself in the game! Written in C#.`,
     note: '',
     image: 'ThrowGame-Demo.gif',
+    link: 'https://github.com/Syndrical/ThrowGame-VR',
   },
   {
     id: '10',
@@ -138,22 +150,13 @@ export const otherExperience = [
       'University of Manitoba - Biomedical Engineering Design Team',
     location: 'Winnipeg, MB',
     duration: 'April 2019 - CURRENT',
-    text: `Worked with other members and executives of University of Manitoba's Biomedical Engineering Design Team to create and manage the team's website using Wordpress. Link here.`,
+    text: `Worked with other members and executives of University of Manitoba's Biomedical Engineering Design Team to create and manage the team's website using Wordpress.`,
     note: '',
     image: 'IMG_9399_EDIT.jpg',
+    link: 'https://uofmbmed.com/',
   },
   {
     id: '12',
-    title: 'Aesthetics Team',
-    place: 'University of Manitoba - Concrete Canoe',
-    location: 'Winnipeg, MB',
-    duration: 'September 2019 - CURRENT',
-    text: `Worked with other members on the Aesthetics Team of University of Manitoba's Concrete Canoe to provide the logo, the color scheme of the team, as well as the design of the canoe itself.`,
-    note: '',
-    image: 'UMCCC_Logo.png',
-  },
-  {
-    id: '13',
     title: 'Hype Crew',
     place: 'Ignite Cycle & Strength',
     location: 'Winnipeg, MB',
@@ -163,7 +166,7 @@ export const otherExperience = [
     image: 'ignite.jpg',
   },
   {
-    id: '14',
+    id: '13',
     title: 'Hype Crew',
     place: 'WPG Cycle',
     location: 'Winnipeg, MB',
@@ -171,6 +174,16 @@ export const otherExperience = [
     text: `Worked with other members of Hype Crew to help set up, clean, and manage the studio, and interacted with riders during shifts to help pump them up and get engaged before and after cycling.`,
     note: '',
     image: 'wpgcycle.jpg',
+  },
+  {
+    id: '14',
+    title: 'Aesthetics Team',
+    place: 'University of Manitoba - Concrete Canoe',
+    location: 'Winnipeg, MB',
+    duration: 'September 2019 - CURRENT',
+    text: `Worked with other members on the Aesthetics Team of University of Manitoba's Concrete Canoe to provide the logo, the color scheme of the team, as well as the design of the canoe itself.`,
+    note: '',
+    image: 'UMCCC_Logo.png',
   },
   {
     id: '15',
@@ -223,6 +236,21 @@ export const DisplayExperience = (job) => {
                 <Box>{job.text}</Box>
               </Typography>
             </Grid>
+            {job.link && (
+              <Grid item>
+                <Typography variant="caption">
+                  <Button
+                    size="small"
+                    variant="outlined"
+                    href={job.link}
+                    color="textPrimary"
+                    endIcon={<ForwardIcon />}
+                  >
+                    Click here for more
+                  </Button>
+                </Typography>
+              </Grid>
+            )}
             <Grid item>
               <Typography variant="overline" color="textPrimary">
                 <Box>{job.location}</Box>
