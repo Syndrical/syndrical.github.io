@@ -27,48 +27,46 @@ export default function Education() {
   const classes = useStyles();
 
   return (
-    <div>
+    <CardMedia
+      className={classes.image}
+      title="University of Manitoba - Bright Picture"
+      image="uofmdark.jpg"
+    >
       <Divider />
-      <CardMedia
-        className={classes.image}
-        title="University of Manitoba - Bright Picture"
-        image="uofmdark.jpg"
-      >
-        <Container className={classes.container}>
-          <Grid container spacing={2}>
-            <Grid item xs={12} sm container>
-              <Grid item xs container direction="column" spacing={2}>
-                <Grid item xs>
-                  <Typography align="center" variant="h5">
-                    <Box fontWeight="fontWeightBold">
-                      University of Manitoba
-                    </Box>
-                  </Typography>
-                  <Typography
-                    gutterBottom
-                    align="center"
-                    variant="subtitle2"
-                  >
-                    <Box fontStyle="oblique">
-                      September 2015 - April 2020
-                    </Box>
-                  </Typography>
-                  <Typography align="center" variant="subtitle2">
-                    <Box>
-                      B. Sc. Bachelor of Computer Science, Honours
-                      (Co-op) / Minor in Psychology
-                    </Box>
-                  </Typography>
-                  <Typography align="center" variant="subtitle1">
-                    <Box fontFamily="Monospace">GPA: 3.83 / 4.5</Box>
-                  </Typography>
-                </Grid>
+      <Container className={classes.container}>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm container>
+            <Grid item xs container direction="column" spacing={2}>
+              <Grid item xs>
+                <Typography align="center" variant="h5">
+                  <Box fontWeight="fontWeightBold">
+                    University of Manitoba
+                  </Box>
+                </Typography>
+                <Typography
+                  gutterBottom
+                  align="center"
+                  variant="subtitle2"
+                >
+                  <Box fontStyle="oblique">
+                    September 2015 - April 2020
+                  </Box>
+                </Typography>
+                <Typography align="center" variant="subtitle2">
+                  <Box>
+                    B. Sc. Bachelor of Computer Science, Honours
+                    (Co-op) / Minor in Psychology
+                  </Box>
+                </Typography>
+                <Typography align="center" variant="subtitle1">
+                  <Box fontFamily="Monospace">GPA: 3.83 / 4.5</Box>
+                </Typography>
               </Grid>
             </Grid>
           </Grid>
-        </Container>
-      </CardMedia>
+        </Grid>
+      </Container>
       <Divider />
-    </div>
+    </CardMedia>
   );
 }

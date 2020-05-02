@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
 import {
   Container,
   IconButton,
@@ -40,14 +40,26 @@ const useStyles = makeStyles(() => ({
 
 export default function Education() {
   const classes = useStyles();
+  const theme = useTheme();
 
   return (
-    <div>
+    <div
+      style={
+        theme.palette.type === 'light'
+          ? { backgroundColor: '#ffffff' }
+          : { backgroundColor: '#212121' }
+      }
+    >
       <Container className={classes.container}>
-        <Typography align="center" variant="h4">
+        <Typography align="center" color="textPrimary" variant="h4">
           <Box>Contact Me</Box>
         </Typography>
-        <Typography align="center" gutterBottom variant="caption">
+        <Typography
+          align="center"
+          color="textSecondary"
+          gutterBottom
+          variant="caption"
+        >
           <Box>Wanna connect? See more information? Let's talk. </Box>
         </Typography>
         <Box justifyContent="center" display="flex">

@@ -202,13 +202,21 @@ export const DisplayExperience = (job) => {
         <Grid item xs={12} sm container>
           <Grid item xs container direction="column" spacing={2}>
             <Grid item xs>
-              <Typography gutterBottom variant="h5">
+              <Typography
+                gutterBottom
+                variant="h5"
+                color="textPrimary"
+              >
                 <Box fontWeight="fontWeightBold">{job.title}</Box>
               </Typography>
-              <Typography variant="subtitle1">
+              <Typography variant="subtitle1" color="textPrimary">
                 <Box>{job.place}</Box>
               </Typography>
-              <Typography variant="subtitle2" gutterBottom>
+              <Typography
+                variant="subtitle2"
+                color="textPrimary"
+                gutterBottom
+              >
                 <Box fontStyle="oblique">{job.duration}</Box>
               </Typography>
               <Typography variant="caption" color="textSecondary">
@@ -216,13 +224,15 @@ export const DisplayExperience = (job) => {
               </Typography>
             </Grid>
             <Grid item>
-              <Typography variant="overline">
+              <Typography variant="overline" color="textPrimary">
                 <Box>{job.location}</Box>
               </Typography>
             </Grid>
           </Grid>
           <Grid item>
-            <Typography variant="button">{job.note}</Typography>
+            <Typography variant="button" color="textPrimary">
+              {job.note}
+            </Typography>
           </Grid>
         </Grid>
       </Grid>

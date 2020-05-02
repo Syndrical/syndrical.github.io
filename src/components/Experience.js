@@ -66,7 +66,6 @@ export default function About() {
           value={value}
           onChange={handleChange}
           indicatorColor="primary"
-          textColor="primary"
           aria-label="experience"
           centered
         >
@@ -78,7 +77,11 @@ export default function About() {
       <CardMedia
         className={classes.image}
         title="Winnipeg"
-        image="nature.jpg"
+        image={
+          theme.palette.type === 'light'
+            ? 'nature.jpg'
+            : 'darkbackground.jpg'
+        }
       >
         <TabPanel
           key="4"
@@ -104,8 +107,8 @@ export default function About() {
         >
           <OtherExperience />
         </TabPanel>
+        <Divider />
       </CardMedia>
-      <Divider />
     </div>
   );
 }
