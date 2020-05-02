@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Education() {
   const classes = useStyles();
   const theme = useTheme();
-
+  console.log(theme);
   return (
     <div
       style={

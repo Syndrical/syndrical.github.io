@@ -16,7 +16,7 @@ import Contact from './components/Contact';
 const themeObject = {
   palette: {
     primary: { main: '#053f5b' },
-    secondary: { main: '#5e3c6f' },
+    secondary: { main: '#053f5b' },
     type: 'light',
   },
   themeName: 'Website Text',
@@ -44,7 +44,6 @@ export default function App() {
   const [theme, toggleDarkMode] = useDarkMode();
 
   const themeConfig = createMuiTheme(theme);
-
   return (
     <div className="app">
       <MuiThemeProvider theme={themeConfig}>
