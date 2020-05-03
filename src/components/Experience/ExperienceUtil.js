@@ -54,6 +54,15 @@ export const workExperience = [
   },
   {
     id: '3',
+    title: 'Virtual / Augmented Reality Technology Assistant',
+    place: 'University of Manitoba – Rady Faculty of Health Sciences',
+    location: 'Winnipeg, MB',
+    duration: 'July 2018 - April 2019',
+    text: `Taught the use of various virtual reality equipment to students and therapists. Worked with students and therapists on using virtual reality equipment on patients to provide effective, analytic data and efficient treatment plans.`,
+    image: 'virtualreality.jpg',
+  },
+  {
+    id: '4',
     title: 'Application Developer',
     place: 'Wawanesa Insurance',
     location: 'Winnipeg, MB',
@@ -63,7 +72,7 @@ export const workExperience = [
     image: 'wawanesa.jpg',
   },
   {
-    id: '4',
+    id: '5',
     title: 'Programmer / Analyst',
     place: 'Agriculture and Agri-Food Canada',
     location: 'Winnipeg, MB',
@@ -73,7 +82,7 @@ export const workExperience = [
     image: 'agricultureagrifoods.jpg',
   },
   {
-    id: '5',
+    id: '6',
     title: 'Undergraduate Researcher',
     place: 'University of Manitoba - HCI Labs',
     location: 'Winnipeg, MB',
@@ -87,7 +96,7 @@ export const workExperience = [
 
 export const projectExperience = [
   {
-    id: '6',
+    id: '7',
     title: 'Personal Website',
     place: 'Personal Project',
     location: 'Winnipeg, MB',
@@ -98,7 +107,7 @@ export const projectExperience = [
     link: 'https://syndrical.github.io/',
   },
   {
-    id: '7',
+    id: '8',
     title: 'NotifyVR',
     place: 'Group Project',
     location: 'Winnipeg, MB',
@@ -109,7 +118,7 @@ export const projectExperience = [
     link: 'https://github.com/tizzir/VRNotifications',
   },
   {
-    id: '8',
+    id: '9',
     title: 'Shape Interpreter',
     place: 'Group Project',
     location: 'Winnipeg, MB',
@@ -120,7 +129,7 @@ export const projectExperience = [
     link: 'https://github.com/Syndrical/ShapeInterpreter',
   },
   {
-    id: '9',
+    id: '10',
     title: 'Throw-GameVR',
     place: 'Personal Project',
     location: 'Winnipeg, MB',
@@ -131,7 +140,7 @@ export const projectExperience = [
     link: 'https://github.com/Syndrical/ThrowGame-VR',
   },
   {
-    id: '10',
+    id: '11',
     title: 'Cow-Tris Adventures',
     place: 'Group Project',
     location: 'Winnipeg, MB',
@@ -144,7 +153,7 @@ export const projectExperience = [
 
 export const otherExperience = [
   {
-    id: '11',
+    id: '12',
     title: 'Webmaster',
     place:
       'University of Manitoba - Biomedical Engineering Design Team',
@@ -156,7 +165,7 @@ export const otherExperience = [
     link: 'https://uofmbmed.com/',
   },
   {
-    id: '12',
+    id: '13',
     title: 'Hype Crew',
     place: 'Ignite Cycle & Strength',
     location: 'Winnipeg, MB',
@@ -166,7 +175,7 @@ export const otherExperience = [
     image: 'ignite.jpg',
   },
   {
-    id: '13',
+    id: '14',
     title: 'Hype Crew',
     place: 'WPG Cycle',
     location: 'Winnipeg, MB',
@@ -176,7 +185,7 @@ export const otherExperience = [
     image: 'wpgcycle.jpg',
   },
   {
-    id: '14',
+    id: '15',
     title: 'Aesthetics Team',
     place: 'University of Manitoba - Concrete Canoe',
     location: 'Winnipeg, MB',
@@ -186,7 +195,7 @@ export const otherExperience = [
     image: 'UMCCC_Logo.png',
   },
   {
-    id: '15',
+    id: '16',
     title: 'Frontline Leader',
     place: 'University of Manitoba',
     location: 'Winnipeg, MB',
@@ -243,7 +252,6 @@ export const DisplayExperience = (job) => {
                     size="small"
                     variant="outlined"
                     href={job.link}
-                    color="textPrimary"
                     endIcon={<ForwardIcon />}
                   >
                     Click here for more

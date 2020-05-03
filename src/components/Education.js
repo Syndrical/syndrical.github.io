@@ -7,9 +7,10 @@ import {
   Typography,
   Box,
   Divider,
+  Button,
 } from '@material-ui/core';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
@@ -20,6 +21,9 @@ const useStyles = makeStyles(() => ({
   },
   image: {
     backgroundAttachment: 'fixed',
+  },
+  button: {
+    padding: theme.spacing(10),
   },
 }));
 
@@ -61,6 +65,16 @@ export default function Education() {
                 <Typography align="center" variant="subtitle1">
                   <Box fontFamily="Monospace">GPA: 3.83 / 4.5</Box>
                 </Typography>
+                <Box justifyContent="center" display="flex">
+                  <Button
+                    style={{ margin: 10 }}
+                    color="inherit"
+                    variant="outlined"
+                    href="/Resume.pdf"
+                  >
+                    Resume (PDF)
+                  </Button>
+                </Box>
               </Grid>
             </Grid>
           </Grid>
