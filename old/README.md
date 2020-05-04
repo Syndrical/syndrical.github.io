@@ -1,2 +1,0 @@
-# syndrical.github.io
-Website
