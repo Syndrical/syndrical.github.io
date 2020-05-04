@@ -7,11 +7,12 @@ import {
   AppBar,
 } from '@material-ui/core';
 import { createMuiTheme } from '@material-ui/core/styles';
+import './App.css';
 import Introduction from './components/Introduction';
 import Experience from './components/Experience';
-import './App.css';
 import Education from './components/Education';
 import Contact from './components/Contact';
+import Codebox from './components/Codebox';
 
 const themeObject = {
   palette: {
@@ -58,6 +59,7 @@ export default function App() {
         <Introduction />
         <Experience />
         <Education />
+        <Codebox />
         <Contact />
       </MuiThemeProvider>
     </div>

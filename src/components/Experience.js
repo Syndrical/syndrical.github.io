@@ -16,7 +16,7 @@ import WorkExperience from './Experience/WorkExperience';
 import ProjectExperience from './Experience/ProjectExperience';
 import OtherExperience from './Experience/OtherExperience';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     flexGrow: 1,
   },

@@ -96,7 +96,7 @@ export const workExperience = [
 
 export const projectExperience = [
   {
-    id: '7',
+    id: '1',
     title: 'Personal Website',
     place: 'Personal Project',
     location: 'Winnipeg, MB',
@@ -107,7 +107,7 @@ export const projectExperience = [
     link: 'https://syndrical.github.io/',
   },
   {
-    id: '8',
+    id: '2',
     title: 'NotifyVR',
     place: 'Group Project',
     location: 'Winnipeg, MB',
@@ -118,7 +118,7 @@ export const projectExperience = [
     link: 'https://github.com/tizzir/VRNotifications',
   },
   {
-    id: '9',
+    id: '3',
     title: 'Shape Interpreter',
     place: 'Group Project',
     location: 'Winnipeg, MB',
@@ -129,7 +129,7 @@ export const projectExperience = [
     link: 'https://github.com/Syndrical/ShapeInterpreter',
   },
   {
-    id: '10',
+    id: '4',
     title: 'Throw-GameVR',
     place: 'Personal Project',
     location: 'Winnipeg, MB',
@@ -140,7 +140,7 @@ export const projectExperience = [
     link: 'https://github.com/Syndrical/ThrowGame-VR',
   },
   {
-    id: '11',
+    id: '5',
     title: 'Cow-Tris Adventures',
     place: 'Group Project',
     location: 'Winnipeg, MB',
@@ -153,7 +153,7 @@ export const projectExperience = [
 
 export const otherExperience = [
   {
-    id: '12',
+    id: '1',
     title: 'Webmaster',
     place:
       'University of Manitoba - Biomedical Engineering Design Team',
@@ -165,7 +165,7 @@ export const otherExperience = [
     link: 'https://uofmbmed.com/',
   },
   {
-    id: '13',
+    id: '2',
     title: 'Hype Crew',
     place: 'Ignite Cycle & Strength',
     location: 'Winnipeg, MB',
@@ -175,7 +175,7 @@ export const otherExperience = [
     image: 'ignite.jpg',
   },
   {
-    id: '14',
+    id: '3',
     title: 'Hype Crew',
     place: 'WPG Cycle',
     location: 'Winnipeg, MB',
@@ -185,7 +185,7 @@ export const otherExperience = [
     image: 'wpgcycle.jpg',
   },
   {
-    id: '15',
+    id: '4',
     title: 'Aesthetics Team',
     place: 'University of Manitoba - Concrete Canoe',
     location: 'Winnipeg, MB',
@@ -195,7 +195,7 @@ export const otherExperience = [
     image: 'UMCCC_Logo.png',
   },
   {
-    id: '16',
+    id: '5',
     title: 'Frontline Leader',
     place: 'University of Manitoba',
     location: 'Winnipeg, MB',
