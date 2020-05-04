@@ -67,7 +67,7 @@ export const workExperience = [
     place: 'Wawanesa Insurance',
     location: 'Winnipeg, MB',
     duration: 'September 2018 - December 2018',
-    text: `Detected, investigated, and resolved bugs in discrete parts of different applications throughout the company. Constructed effective test cases using Karma and Jasmine to ensure the quality and usability of the application to achieved business standards. Created endpoints to utilize HTTP Requests to add in notifications about system maintenance / outtages to applications.  Collaborated with UX Designer to design and create UI additions with JavaScript, and AngularJS.`,
+    text: `Detected, investigated, and resolved bugs in discrete parts of different applications throughout the company. Constructed effective test cases using Karma and Jasmine to ensure the quality and usability of the application to achieved business standards. Created endpoints to utilize HTTP Requests to add in notifications about system maintenance / outtages to applications.  Collaborated with UX Designer to design and create UI additions with JavaScript, and Angular.js.`,
     note: 'Co-op Work Term 2',
     image: 'wawanesa.jpg',
   },
