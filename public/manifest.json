@@ -1,0 +1,25 @@
+{
+  "short_name": "Personal Website",
+  "name": "A Personal Website",
+  "icons": [
+    {
+      "src": "./icons/favicon.ico",
+      "sizes": "32x32 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "./icons/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./icons/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#212121",
+  "background_color": "#ffffff"
+}
