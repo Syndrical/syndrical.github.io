@@ -224,13 +224,22 @@ export const DisplayExperience = (job) => {
         <Grid item xs={12} sm container>
           <Grid item xs container direction="column" spacing={2}>
             <Grid item xs>
-              <Typography
-                gutterBottom
-                variant="h5"
-                color="textPrimary"
-              >
-                <Box fontWeight="fontWeightBold">{job.title}</Box>
-              </Typography>
+              <Grid container justify="space-between" direction="row">
+                <Grid item>
+                  <Typography
+                    gutterBottom
+                    variant="h5"
+                    color="textPrimary"
+                  >
+                    <Box fontWeight="fontWeightBold">{job.title}</Box>
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <Typography variant="button" color="textPrimary">
+                    {job.note}
+                  </Typography>
+                </Grid>
+              </Grid>
               <Typography variant="subtitle1" color="textPrimary">
                 <Box>{job.place}</Box>
               </Typography>
@@ -264,11 +273,6 @@ export const DisplayExperience = (job) => {
                 <Box>{job.location}</Box>
               </Typography>
             </Grid>
-          </Grid>
-          <Grid item>
-            <Typography variant="button" color="textPrimary">
-              {job.note}
-            </Typography>
           </Grid>
         </Grid>
       </Grid>

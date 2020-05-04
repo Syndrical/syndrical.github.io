@@ -7,7 +7,7 @@ export const languageExperience = [
     id: '1',
     name: 'C',
     experience:
-      'Used for a single class, teaching me the importance of testing and looking through code thoroughly.',
+      'Used for a couple of classes in university, teaching me the importance of testing and looking through code thoroughly.',
   },
   {
     id: '2',
@@ -19,7 +19,7 @@ export const languageExperience = [
     id: '3',
     name: 'C++',
     experience:
-      'C++ was the first programming language I have learned when taking Computer Science in high school. This was also used in a couple of other classes in University. C++ allowed me to help understand how C works.',
+      'C++ was the first programming language I have learned when taking Computer Science in high school. This was also used in a couple of other classes in university. C++ allowed me to help understand how C works.',
   },
   {
     id: '4',
@@ -37,9 +37,14 @@ export const languageExperience = [
     id: '6',
     name: 'Java',
     experience:
-      'Utilized throughout most classes in University. Java is also the language I use when explaining stuff as a Teacher Assistant.',
+      'Utilized throughout most classes in university. Java is also the language I use when explaining stuff as a Teacher Assistant.',
   },
-  { id: '7', name: 'JavaScript', experience: 'Stuff' },
+  {
+    id: '7',
+    name: 'JavaScript',
+    experience:
+      'JavaScript was used during my first work term, as well as some assignments in university.',
+  },
   {
     id: '8',
     name: 'Python',
@@ -50,7 +55,7 @@ export const languageExperience = [
     id: '9',
     name: 'Ruby',
     experience:
-      'Only used it in an assignment for a class in University.',
+      'Only used it in an assignment for a class in university.',
   },
   {
     id: '10',
@@ -62,7 +67,7 @@ export const languageExperience = [
     id: '11',
     name: 'TypeScript',
     experience:
-      'TypeScript was the main language I have used for my third work term.',
+      'TypeScript was the main language I used for my third work term.',
   },
   {
     id: '12',
@@ -175,7 +180,7 @@ export const toolExperience = [
     id: '5',
     name: 'Eclipse',
     experience:
-      'Only used for a single class in University, since it was recommended at the time and I was still new to different IDEs.',
+      'Only used for a single class in university, since it was recommended at the time and I was still new to different IDEs.',
   },
   {
     id: '6',
@@ -211,7 +216,7 @@ export const toolExperience = [
     id: '11',
     name: 'Visual Studio',
     experience:
-      'Used Visual Studio throughout high school when learning C++, including Cow-Tris Adventures, as well as a couple assignments in University.',
+      'Used Visual Studio throughout high school when learning C++, including Cow-Tris Adventures, as well as a couple assignments in university.',
   },
   {
     id: '12',

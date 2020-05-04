@@ -43,7 +43,7 @@ export default function Education() {
           <Avatar
             className={classes.avatar}
             alt="Kevin Hoang"
-            src="DSC_0064.jpg"
+            src="me.jpg"
           />
         </Box>
         <Typography align="center" color="textPrimary" variant="h4">
