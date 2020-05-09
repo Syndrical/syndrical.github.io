@@ -149,6 +149,12 @@ export const frameworkExperience = [
     experience:
       'Created this website with React. Also used React for a group project. ',
   },
+  {
+    id: '13',
+    name: 'Redux',
+    experience:
+      'Used Redux as a state management framework to create a website for a group project made in React, as well as my third work term. ',
+  },
 ];
 
 export const toolExperience = [

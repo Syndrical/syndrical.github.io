@@ -104,7 +104,7 @@ export const projectExperience = [
     text: `A website dedicated to myself to both test my abilities in website development and design. Used React and Material-UI, along with HTML, CSS, and JavaScript.`,
     note: '',
     image: 'website.jpg',
-    link: 'https://syndrical.github.io/',
+    link: 'https://github.com/Syndrical/syndrical.github.io/',
   },
   {
     id: '2',
